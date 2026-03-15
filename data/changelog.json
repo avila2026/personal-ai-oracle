@@ -65,5 +65,16 @@
       "contexto": "Expandir habilidades para o Oraculo",
       "resultado": ""
     }
+  },
+  {
+    "data": "2026-03-15T04:37:05.024Z",
+    "campo": "decisoes_recentes",
+    "valor_anterior": "nova entrada via API",
+    "valor_novo": {
+      "data": "2026-03-15T04:37:05.023Z",
+      "descricao": "Decidi evoluir o Oráculo para v2.0",
+      "contexto": "Expandir sistema com novos endpoints e perfil dinâmico",
+      "resultado": ""
+    }
   }
 ]

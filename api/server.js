@@ -282,6 +282,72 @@ app.get('/evolution', (req, res) => {
 });
 
 // ════════════════════════════════════════════════════
+// Memória Vetorial (Fase 3)
+// ════════════════════════════════════════════════════
+
+// Dependência opcional: só carrega se for chamado para não quebrar a API
+// caso o ChromaDB não esteja rodando
+function getVectorStore() {
+  return require('../src/memory/vectorStore');
+}
+
+// POST /memory — Adiciona uma nova memória vetorial
+app.post('/memory', async (req, res) => {
+  try {
+    const { texto, categoria } = req.body;
+
+    if (!texto) {
+      return res.status(400).json({
+        error: 'Bad Request',
+        detail: 'O campo "texto" é obrigatório para criar uma memória.',
+      });
+    }
+
+    const { addMemory } = getVectorStore();
+    const result = await addMemory(texto, categoria || 'geral');
+
+    res.status(201).json({
+      status: 'success',
+      message: 'Memória injetada com sucesso no vetor longo prazo.',
+      data: result,
+    });
+  } catch (error) {
+    console.error('Erro ao adicionar memória:', error.message);
+    res.status(500).json({ error: 'Erro de Memória', detail: error.message });
+  }
+});
+
+// GET /memory/search — Busca memórias similares a uma query
+app.get('/memory/search', async (req, res) => {
+  try {
+    const { q, limit } = req.query;
+
+    if (!q) {
+      return res.status(400).json({
+        error: 'Bad Request',
+        detail: 'O parâmetro de query "q" é obrigatório.',
+      });
+    }
+
+    const { searchMemories } = getVectorStore();
+    const nResults = limit ? parseInt(limit, 10) : 3;
+    const results = await searchMemories(q, nResults);
+
+    res.json({
+      status: 'success',
+      data: {
+        query: q,
+        resultados_encontrados: results.length,
+        memorias: results,
+      },
+    });
+  } catch (error) {
+    console.error('Erro ao buscar memória:', error.message);
+    res.status(500).json({ error: 'Erro de Memória', detail: error.message });
+  }
+});
+
+// ════════════════════════════════════════════════════
 // Inicializar Servidor
 // ════════════════════════════════════════════════════
 
@@ -301,6 +367,8 @@ app.listen(PORT, () => {
   console.log(`      POST /decisions        — Registrar nova decisão`);
   console.log(`      POST /feedback         — Feedback de agentes`);
   console.log(`      GET  /evolution        — Evolução do perfil (?campo=humor_recente)`);
+  console.log(`      POST /memory           — Registrar nova memória vetorial`);
+  console.log(`      GET  /memory/search    — Busca semântica nas memórias (?q=...&limit=3)`);
   console.log('');
   console.log(`   🚀 Teste: curl -H "X-API-Key: ${API_KEY}" http://localhost:${PORT}/context`);
   console.log('   ════════════════════════════════════════════════════\n');
