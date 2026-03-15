@@ -1,0 +1,69 @@
+{
+  "version": {
+    "type": "string",
+    "description": "Versão atual do schema do perfil."
+  },
+  "ultima_atualizacao": {
+    "type": "string",
+    "format": "date-time",
+    "description": "Data/hora da última atualização do perfil."
+  },
+  "nome": {
+    "type": "string",
+    "description": "Nome completo do usuário."
+  },
+  "interesses": {
+    "type": "array",
+    "items": "string",
+    "description": "Lista de interesses e hobbies principais do usuário (ex: 'tecnologia', 'leitura', 'esportes')."
+  },
+  "valores_pessoais": {
+    "type": "array",
+    "items": "string",
+    "description": "Valores que guiam as decisões e ações do usuário (ex: 'autonomia', 'inovação', 'família')."
+  },
+  "pontos_fortes": {
+    "type": "array",
+    "items": "string",
+    "description": "Habilidades e competências naturais do usuário (ex: 'resolução de problemas', 'comunicação técnica')."
+  },
+  "pontos_fracos": {
+    "type": "array",
+    "items": "string",
+    "description": "Áreas onde o usuário reconhece que precisa melhorar (ex: 'delegação', 'paciência')."
+  },
+  "estilo_comunicacao": {
+    "type": "string",
+    "description": "Como o usuário prefere se comunicar (ex: 'direto e objetivo', 'visual com exemplos')."
+  },
+  "metas_profissionais": {
+    "type": "string",
+    "description": "Principais objetivos profissionais de curto a médio prazo do usuário."
+  },
+  "estilo_aprendizagem": {
+    "type": "string",
+    "description": "Preferência de como o usuário aprende melhor (ex: 'visual', 'auditivo', 'prático')."
+  },
+  "humor_recente": {
+    "type": "string",
+    "description": "Como o usuário se sente na maior parte do tempo ou recentemente (ex: 'motivado', 'focado', 'calmo')."
+  },
+  "historico_tarefas_relevantes": {
+    "type": "array",
+    "items": "string",
+    "description": "Resumo de tarefas importantes concluídas ou em andamento."
+  },
+  "decisoes_recentes": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "data": { "type": "string", "format": "date-time" },
+        "descricao": { "type": "string" },
+        "contexto": { "type": "string" },
+        "resultado": { "type": "string" }
+      }
+    },
+    "description": "Registro de decisões importantes tomadas pelo usuário, com data, contexto e resultado."
+  }
+}

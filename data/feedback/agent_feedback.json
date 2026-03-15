@@ -1,0 +1,16 @@
+[
+  {
+    "data": "2026-03-15T03:55:33.817Z",
+    "agente": "Antigravity-Test",
+    "endpoint_consultado": "/context",
+    "utilidade": 5,
+    "comentario": "Contexto muito útil para personalização"
+  },
+  {
+    "data": "2026-03-15T04:01:34.592Z",
+    "agente": "Antigravity-Test",
+    "endpoint_consultado": "/context",
+    "utilidade": 5,
+    "comentario": "Contexto muito útil para personalização"
+  }
+]

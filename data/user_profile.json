@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0",
+  "ultima_atualizacao": "2026-03-15T04:02:13.846Z",
+  "nome": "Jean Carlos",
+  "interesses": [
+    "automação",
+    "desenvolvimento de software",
+    "inteligência artificial",
+    "empreendedorismo",
+    "machine learning"
+  ],
+  "valores_pessoais": [
+    "autonomia",
+    "inovação",
+    "aprendizado contínuo"
+  ],
+  "pontos_fortes": [
+    "resolução de problemas técnicos",
+    "autodidatismo",
+    "execução rápida de projetos"
+  ],
+  "pontos_fracos": [],
+  "estilo_comunicacao": "direto e prático, prefere exemplos reais",
+  "metas_profissionais": "Lançar uma startup de automação com IA em até 6 meses e escalar o negócio rapidamente.",
+  "estilo_aprendizagem": "prático, baseado em projetos e experimentação",
+  "humor_recente": "empolgado construindo o Oraculo v2.0",
+  "historico_tarefas_relevantes": [
+    "Instalação e configuração do OpenClaw em VPS Hostinger.",
+    "Configuração de integração com GitHub (SSH e gh CLI).",
+    "Instalação do Ollama e Qwen 2.5 7B localmente.",
+    "Desenvolvimento de skill para monitor de tendências de vendas (CSV + Ollama).",
+    "Elaboração da visão do projeto Oráculo de Identidade para Agentes de IA."
+  ],
+  "decisoes_recentes": [
+    {
+      "data": "2026-03-15T03:53:51.341Z",
+      "descricao": "Decidi evoluir o Oraculo para v2.0",
+      "contexto": "Expandir sistema",
+      "resultado": ""
+    },
+    {
+      "data": "2026-03-15T03:55:33.806Z",
+      "descricao": "Decidi evoluir o Oráculo para v2.0",
+      "contexto": "Expandir sistema com novos endpoints e perfil dinâmico",
+      "resultado": ""
+    },
+    {
+      "data": "2026-03-15T04:01:34.577Z",
+      "descricao": "Decidi evoluir o Oráculo para v2.0",
+      "contexto": "Expandir sistema com novos endpoints e perfil dinâmico",
+      "resultado": ""
+    },
+    {
+      "data": "2026-03-15T04:02:13.845Z",
+      "descricao": "Decidi adicionar machine learning como interesse",
+      "contexto": "Expandir habilidades para o Oraculo",
+      "resultado": ""
+    }
+  ]
+}

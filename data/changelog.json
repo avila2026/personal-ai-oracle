@@ -1,0 +1,69 @@
+[
+  {
+    "data": "2026-03-15T03:53:51.342Z",
+    "campo": "decisoes_recentes",
+    "valor_anterior": "nova entrada via API",
+    "valor_novo": {
+      "data": "2026-03-15T03:53:51.341Z",
+      "descricao": "Decidi evoluir o Oraculo para v2.0",
+      "contexto": "Expandir sistema",
+      "resultado": ""
+    }
+  },
+  {
+    "data": "2026-03-15T03:55:33.807Z",
+    "campo": "decisoes_recentes",
+    "valor_anterior": "nova entrada via API",
+    "valor_novo": {
+      "data": "2026-03-15T03:55:33.806Z",
+      "descricao": "Decidi evoluir o Oráculo para v2.0",
+      "contexto": "Expandir sistema com novos endpoints e perfil dinâmico",
+      "resultado": ""
+    }
+  },
+  {
+    "data": "2026-03-15T04:01:34.578Z",
+    "campo": "decisoes_recentes",
+    "valor_anterior": "nova entrada via API",
+    "valor_novo": {
+      "data": "2026-03-15T04:01:34.577Z",
+      "descricao": "Decidi evoluir o Oráculo para v2.0",
+      "contexto": "Expandir sistema com novos endpoints e perfil dinâmico",
+      "resultado": ""
+    }
+  },
+  {
+    "data": "2026-03-15T04:01:59.222Z",
+    "campo": "interesses",
+    "valor_anterior": [
+      "automação",
+      "desenvolvimento de software",
+      "inteligência artificial",
+      "empreendedorismo"
+    ],
+    "valor_novo": [
+      "automação",
+      "desenvolvimento de software",
+      "inteligência artificial",
+      "empreendedorismo",
+      "machine learning"
+    ]
+  },
+  {
+    "data": "2026-03-15T04:02:06.721Z",
+    "campo": "humor_recente",
+    "valor_anterior": "motivado, focado e com energia para construir projetos inovadores",
+    "valor_novo": "empolgado construindo o Oraculo v2.0"
+  },
+  {
+    "data": "2026-03-15T04:02:13.847Z",
+    "campo": "decisoes_recentes",
+    "valor_anterior": "nova entrada",
+    "valor_novo": {
+      "data": "2026-03-15T04:02:13.845Z",
+      "descricao": "Decidi adicionar machine learning como interesse",
+      "contexto": "Expandir habilidades para o Oraculo",
+      "resultado": ""
+    }
+  }
+]

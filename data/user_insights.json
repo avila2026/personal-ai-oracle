@@ -1,0 +1,19 @@
+{
+  "talentos": [
+    "automação",
+    "desenvolvimento de software",
+    "empreendedorismo"
+  ],
+  "ambientes_motivadores": [
+    "dev/automação",
+    "empreendedorismo",
+    "tecnologia de IA"
+  ],
+  "atividades_motivadoras": [
+    "desenvolvimento de habilidades com OpenClaw e GitHub (SSH e gh CLI)",
+    "integração de integrações com Ollama e Qwen 2.5 7B localmente",
+    "implementação de habilidades de monitoramento de tendências de vendas (CSV + Ollama)",
+    "estrutura e elaboração da visão do projeto Oráculo de Identidade para Agentes de IA"
+  ],
+  "analise_motivacional": "Jean Carlos tem habilidades na automatização, integração de software e desenvolvimento de software. Para maximizar seu desempenho e motivação, ele pode se aliar essas habilidades com projetos tecnológicos e projetos empresariais. Além disso, ele pode se aliar as habilidades de automação e a empreendedorismo para gerar mais motivação para alcançar suas metas profissionais."
+}
